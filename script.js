@@ -1,10 +1,3 @@
-/* Pics to be hidden/displayed. */
-// let icecube = document.getElementById('icecube');
-// let smh = document.getElementById('smh');
-// let obama = document.getElementById('obama');
-// let idubbz = document.getElementById('idubbz');
-// let arnold = document.getElementById('arnold');
-
 /* Shows pic corresponding to tip option */
 function displayImg() {
     let select = document.getElementById("tip");
@@ -36,13 +29,14 @@ function displayImg() {
     var imgSrc = 'images/' + name;
     pic.setAttribute('src', imgSrc);
 }
-// Calculates the total price of the meal and price per person.
+
+// Calculates the total price of the meal and price per person
 function calculate() {
 
     const totalDisplay = document.getElementById('totalDisplay'); 
     const splitTotal = document.getElementById('splitTotal');
     
-    // clears previous total
+    // Clears previous total
     totalDisplay.innerHTML = '';
     splitTotal.innerHTML = '';
 
@@ -50,7 +44,7 @@ function calculate() {
     const tip =  document.getElementById('tip').value;
     const numPeople = document.getElementById('people').value;
 
-    // Computes total price and price per person.
+    // Computes total price and price per person
     let totalPrice = +(price * (tip)) + +price;
     let pricePerPerson =  totalPrice / numPeople;
 
@@ -58,11 +52,17 @@ function calculate() {
     totalPrice = totalPrice.toFixed(2);
     pricePerPerson = pricePerPerson.toFixed(2);
 
-    // Creates text output.
+    // Creates text output
     totalPrice = document.createTextNode(totalPrice);
     pricePerPerson = document.createTextNode( pricePerPerson);
 
-    // Displays text output to user.
+    // Displays text output to user
     totalDisplay.appendChild(totalPrice);
     splitTotal.appendChild(pricePerPerson);
 }
+
+document.addEventListener("keyup", function(event) {
+    if (event.code === 'Enter') {
+        calculate();
+    }
+});

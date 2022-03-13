@@ -11,7 +11,7 @@
     background-color: #2b2b2b;
     color: whitesmoke;
     border: 1px solid black;
-    height: 100vh;
+    height: 800px;
     width: 500px;
     margin-top: 2rem;
 }
@@ -26,6 +26,15 @@
     text-align: center;
     margin-top: 1rem;
     padding: .3rem;
+}
+
+.float-container {
+    padding: 30px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
 }
 
 #calculateBtn {
@@ -43,16 +52,12 @@
     color:#FFFFFF;
     text-align:center;
     transition: all 0.2s;
+    cursor: pointer;
 } 
 
-.float-container {
-    padding: 30px;
-}
-
-.float-child {
-    width: 50%;
-    float: left;
-
+#calculateBtn:hover {
+   color:#000000;
+   background-color:#FFFFFF;
 }
 
 #totalArea {
