@@ -47,11 +47,7 @@ function hidePics() {
 
 // Calculates the total price of the meal and price per person.
 function calculate() {
-    // Resets output.
-    document.getElementById('total').innerHTML = '';
-    document.getElementById('splitTotal').innerHTML = '';
-
-    const price =  document.getElementById('totalPrice').value;
+    const price =  document.getElementById('total').value;
     const tip =  document.getElementById('tip').value;
     const numPeople =  document.getElementById('people').value;
 
@@ -62,12 +58,14 @@ function calculate() {
     totalPrice = totalPrice.toFixed(2);
     pricePerPerson = pricePerPerson.toFixed(2);
 
+    console.log('total price ' + totalPrice);
+
     //Creates text output.
     totalPrice = document.createTextNode(totalPrice);
     pricePerPerson = document.createTextNode( pricePerPerson);
 
     // Adds text output to hidden div.
-    document.getElementById('total').appendChild(totalPrice);
+    document.getElementById('totalDisplay').appendChild(totalPrice);
     document.getElementById('splitTotal').appendChild(pricePerPerson);
 
     // Displays hidden div with output.

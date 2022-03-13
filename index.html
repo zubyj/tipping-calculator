@@ -22,15 +22,16 @@
             <div class="form-item"> 
                 <label for="totalPrice">How much was the total?</label>
                 <div >
-                    <input type="number" id="form-input" step=".01" placeholder="$ 00.00">
+                    <input type="number" id="total" class="form-input" step=".01" placeholder="$ 00.00">
                 </div>
             </div>
-
             <!-- Tip amount -->
             <div class="form-item">
                 <label for="tip">How was the service?</label>
-                <h4>( Tip amount )</h4>
-                <select onchange="displayPic()" id="form-input">
+                <div>
+                    ( Tip amount )
+                </div>
+                <select onchange="displayPic()" id="tip" class="form-input">
                     <option value=".20">20% Great Service</option>
                     <option value=".15">15% Pretty good</option>
                     <option value=".10">10% It was ok</option>
@@ -39,12 +40,11 @@
                     <option value="0.0">0% My disappointment is immeasurable, and my day is ruined. </option>
                 </select>
             </div>
-
             <!-- Amount of people splitting the bill -->
             <div class="form-item">
                 <label for="people">How many are sharing the bill?</label>
                 <div>
-                    <input type="number" class="form-control" id="people" placeholder="1 (Just me)">
+                    <input type="number" class="form-input" id="people" placeholder="1 (Just me)">
                 </div>
             </div>
         </form>
@@ -54,11 +54,13 @@
             <button onclick="calculate()" type="button" id="calculate">Calculate</button>
         </div>
 
-        <!-- Hidden output to display when calculate function is called -->
+        <!-- Displays when calculate button pressed-->
         <div id="finalAmount">
-            The total is : $<span id="total"></span> <br>
+            The total is : $<span id="totalDisplay"></span> <br>
             $<span id="splitTotal"></span> per person.
         </div>
+
+        <img src="images/icecube.jpg" id="pic" />
 
         <!-- Hidden pictures which display corresponding to tip amounts -->
         <div class="pics text-center">

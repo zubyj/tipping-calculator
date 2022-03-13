@@ -4,13 +4,15 @@
     display: flex;
     text-align: center;
     justify-content: center; 
+    height: 130vh;
 }
 
 #calculator {
     background-color: white !important;
     border: 2px solid black;
-    height: 40rem;
-    margin-top: 5rem;
+    height: 100vh;
+    width: 30vw;
+    margin-top: 2rem;
 }
 
 .form-item {
@@ -19,9 +21,10 @@
     font-size: 1.2rem;
 } 
 
-#tip, #totalAmount {
-    width: 10vw;
-    text-align: center !important;
+.form-input {
+    text-align: center;
+    margin-top: 1rem;
+    padding: .3rem;
 }
 
 #icecube {
@@ -45,21 +48,19 @@
 }
 
 #calculate {
-    border-radius: 1px 1px 1px 1px;
-    border: 1px solid black;
     background-color:#2b2b2b;
     color:#fbfbfb;
+    margin-top: 1rem;
+    padding: .5rem;
     margin-bottom:2rem;
-    font-size:1.7rem;
+    font-size:1.3rem;
 }
 
 #calculate:hover {
-    background-color: #fbfbfb;
-    color: #2b2b2b;
+    font-weight: bolder;
 }
 
 #finalAmount {
-    display: none;
-    border: 1px solid black;
     font-size:1.2rem;
+    margin-bottom: 2rem;
 }
