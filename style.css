@@ -8,17 +8,18 @@
 }
 
 #calculator {
-    background-color: white !important;
-    border: 2px solid black;
+    background-color: #2b2b2b;
+    color: whitesmoke;
+    border: 1px solid black;
     height: 100vh;
-    width: 30vw;
+    width: 500px;
     margin-top: 2rem;
 }
 
 .form-item {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid whitesmoke;
 } 
 
 .form-input {
@@ -27,40 +28,44 @@
     padding: .3rem;
 }
 
-#icecube {
-    display: none;
-}
-
-#smh {
-    display: none;
-}
-
-#obama {
-    display: none;
-}
-
-#idubbz {
-    display: none;
-}
-
-#arnold {
-    display: none;
-}
-
-#calculate {
-    background-color:#2b2b2b;
-    color:#fbfbfb;
+#calculateBtn {
     margin-top: 1rem;
-    padding: .5rem;
-    margin-bottom:2rem;
     font-size:1.3rem;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+} 
+
+.float-container {
+    padding: 30px;
 }
 
-#calculate:hover {
-    font-weight: bolder;
+.float-child {
+    width: 50%;
+    float: left;
+
+}
+
+#totalArea {
+    margin: 30px;
+    border-bottom: 2px solid whitesmoke; 
 }
 
 #finalAmount {
-    font-size:1.2rem;
+    font-size:1.1rem;
     margin-bottom: 2rem;
+    border-bottom: 2px solid whitesmoke; 
+}
+
+#pic {
+    height: 200px;
 }
