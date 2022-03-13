@@ -8,13 +8,16 @@ let arnold = document.getElementById('arnold');
 arnold.style.display = "block";
 
 /* Shows the picture corresponding to tip option */
-function showPic() {
-    hidePics();
-
+function displayPic() {
     //Default tip amount
     let value = ".25";
 
     value = document.getElementById('tip').value;
+
+    switch(value) {
+        case "0.1":
+
+    }
 
     if (value === "0.1") {
         icecube.style.display = "block";
@@ -40,7 +43,6 @@ function hidePics() {
     obama.style.display = "none";
     idubbz.style.display = "none";
     arnold.style.display = "none";
-
 }
 
 // Calculates the total price of the meal and price per person.
@@ -49,7 +51,6 @@ function calculate() {
     document.getElementById('total').innerHTML = '';
     document.getElementById('splitTotal').innerHTML = '';
 
-    // Gets three inputs needed to compute total.
     const price =  document.getElementById('totalPrice').value;
     const tip =  document.getElementById('tip').value;
     const numPeople =  document.getElementById('people').value;
@@ -70,5 +71,5 @@ function calculate() {
     document.getElementById('splitTotal').appendChild(pricePerPerson);
 
     // Displays hidden div with output.
-    document.getElementById('output').style.display = 'block';
+    document.getElementById('finalAmount').style.display = 'block';
 }

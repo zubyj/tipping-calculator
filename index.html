@@ -3,10 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
@@ -16,48 +12,52 @@
     <title>Tipping Calculator</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="../index.html"><i class="fa fa-home"></i></a>
-    </nav>
-
-    <!-- Tipping calculator horizontally centered -->
-    <div class="container">
+<div class="container">
+    <div id="calculator">
         <h1>Tipping Calculator</h1>
+
+        <!-- User Input Form -->
         <form>
-            <!-- Gets total price of meal from user -->
-            <div class="form-group">
+            <!-- Total price -->
+            <div class="form-item"> 
                 <label for="totalPrice">How much was the total?</label>
-                <input type="number" class="form-control" id="totalPrice" step=".01" placeholder="$ 00.00">
+                <div >
+                    <input type="number" id="form-input" step=".01" placeholder="$ 00.00">
+                </div>
             </div>
-            <!-- Gets tip amount from user -->
-            <div class="form-group">
-                <label for="tip">How was the service? (Tip amount)</label>
-                <select onchange="showPic()" class = "form-control" id="tip">
-                    <option value=".20">25% Great Service</option>
-                    <option value=".15">20% Pretty good</option>
+
+            <!-- Tip amount -->
+            <div class="form-item">
+                <label for="tip">How was the service?</label>
+                <h4>( Tip amount )</h4>
+                <select onchange="displayPic()" id="form-input">
+                    <option value=".20">20% Great Service</option>
+                    <option value=".15">15% Pretty good</option>
                     <option value=".10">10% It was ok</option>
-                    <option value=".10">5% </option>
-                    <option value="0.1"> 1% This was personal.</option>
-                    <option value="0.0">My disappointment is immeasurable, and my day is ruined. </option>
+                    <option value=".5">5% </option>
+                    <option value="0.1"> 1% This was personal</option>
+                    <option value="0.0">0% My disappointment is immeasurable, and my day is ruined. </option>
                 </select>
             </div>
-            <!-- Gets number of people splitting the bill. -->
-            <div class="form-group">
+
+            <!-- Amount of people splitting the bill -->
+            <div class="form-item">
                 <label for="people">How many are sharing the bill?</label>
-                <input type="number" class="form-control" id="people" placeholder="1 (Just me)">
+                <div>
+                    <input type="number" class="form-control" id="people" placeholder="1 (Just me)">
+                </div>
             </div>
         </form>
 
-        <!-- Runs the calculate function on button click -->
+        <!-- Calculate btn-->
         <div>
             <button onclick="calculate()" type="button" id="calculate">Calculate</button>
         </div>
 
         <!-- Hidden output to display when calculate function is called -->
-        <div id="output">
+        <div id="finalAmount">
             The total is : $<span id="total"></span> <br>
-            That is $<span id="splitTotal"></span> per person.
+            $<span id="splitTotal"></span> per person.
         </div>
 
         <!-- Hidden pictures which display corresponding to tip amounts -->
@@ -68,8 +68,10 @@
             <img id="idubbz" src="images/idubbz.jpg" alt="Idubbz saying 'Hey that's pretty good' ">
             <img id="arnold" src="images/arnold.jpg" alt="The Terminator giving you a thumbs up.">
             <img id="food_guy" src="images/food_guy.jpg" alt="TheReportOfTheWeek guy reviewing Popeyes chicken">
+        </div>
     </div>
-    </div>
+
+</div>
 
     <!-- Used to calculate results & hides/display divs -->
     <script src="script.js"></script>
