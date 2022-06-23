@@ -10,8 +10,8 @@
 #calculator {
     background-color: #2b2b2b;
     color: whitesmoke;
-    border: 1px solid black;
-    height: 800px;
+    border: 2px solid whitesmoke;
+    height: 900px;
     width: 500px;
     margin-top: 2rem;
 }
@@ -19,7 +19,7 @@
 .form-item {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 3px solid rosybrown;
 } 
 
 .form-input {
@@ -38,7 +38,6 @@
 }
 
 #calculateBtn {
-    margin-top: 1rem;
     font-size:1.3rem;
     display:inline-block;
     padding:0.35em 1.2em;
@@ -62,13 +61,11 @@
 
 #totalArea {
     margin: 30px;
-    border-bottom: 2px solid whitesmoke; 
 }
 
 #finalAmount {
     font-size:1.1rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid whitesmoke; 
 }
 
 #pic {

@@ -48,37 +48,29 @@
                     <input type="number" class="form-input" id="people" placeholder="1 (Just me)">
                 </div>
             </div>
+            <div class="form-item">
+                <!-- Displays final amount on calculate button click -->
+                <div class="float-container">
+                    <div class="float-child">
+                        <img id="pic" src="images/doge.jpeg">
+                    </div>
+                    <div class="float-child">
+                        <div id="finalAmount">
+                            <div id="totalArea">
+                                Total $<span id="totalDisplay"></span>
+                            </div>
+                            $<span id="splitTotal"></span> per person
+                        </div>
+                    </div>
+
+                    <!-- Calculate btn -->
+                    <a onclick="calculate()" id="calculateBtn">Calculate</a>
+                    </div>
+                </div>
+            </div>
         </form>
 
 
-
-        <!-- Displays final amount on calculate button click -->
-
-        <div class="float-container">
-            <div class="float-child">
-                <!-- Calculate btn -->
-                <a onclick="calculate()" id="calculateBtn">Calculate</a>
-                <div id="finalAmount">
-                    <div id="totalArea">
-                        The total is : $<span id="totalDisplay"></span>
-                    </div>
-                    $<span id="splitTotal"></span> per person
-                </div>
-            </div>
-            <div class="float-child">
-                <img id="pic" src="images/doge.jpeg">
-            </div>
-        </div>
-        <!-- Hidden pictures which display corresponding to tip amounts -->
-        <!-- <div class="pics text-center">
-            <img id="icecube" src="images/icecube.jpg" alt="Angry Ice Cube">
-            <img id="smh" src="images/smh.jpeg" alt="Disappointed Martin Lawrence">
-            <img id="obama" src="images/obama.jpg" alt="Not bad Obama face.">
-            <img id="idubbz" src="images/idubbz.jpg" alt="Idubbz saying 'Hey that's pretty good' ">
-            <img id="arnold" src="images/arnold.jpg" alt="The Terminator giving you a thumbs up.">
-            <img id="food_guy" src="images/food_guy.jpeg" alt="TheReportOfTheWeek guy reviewing Popeyes chicken">
-        </div> -->
-    </div>
 
 </div>
 
