@@ -23,6 +23,13 @@
                     $<input type="number" id="total" class="form-input" step=".01" placeholder="10.50">
                 </div>
             </div>
+            <!-- Amount of people sharing the bill -->
+            <div class="form-item">
+                <label for="people">How many are sharing the bill?</label>
+                <div>
+                    <input type="number" class="form-input" id="people" placeholder="1 (Just me)">
+                </div>
+            </div>
 
             <!-- Tip amount -->
             <div class="form-item">
@@ -38,39 +45,28 @@
                     <option value=".01"> 1% This was personal</option>
                     <option value="0">0% My disappointment is immeasurable, and my day is ruined. </option>
                 </select>
+
             </div>
 
-            <!-- Amount of people sharing the bill -->
             <div class="form-item">
-                <label for="people">How many are sharing the bill?</label>
-                <div>
-                    <input type="number" class="form-input" id="people" placeholder="1 (Just me)">
-                </div>
+                <img id="pic" src="images/doge.jpeg">
             </div>
-            <div class="form-item">
-                <!-- Displays final amount on calculate button click -->
-                <div class="float-container">
-                    <div class="float-child">
-                        <img id="pic" src="images/doge.jpeg">
-                    </div>
-                    <div class="float-child">
-                        <div id="finalAmount">
-                            <div id="totalArea">
-                                Total $<span id="totalDisplay"></span>
-                            </div>
-                            $<span id="splitTotal"></span> per person
-                        </div>
-                    </div>
 
-                    <!-- Calculate btn -->
-                    <a onclick="calculate()" id="calculateBtn">Calculate</a>
-                    </div>
+            <!-- Displays final amount on calculate button click -->
+            <div class="form-item">
+                <!-- Calculate btn -->
+                <a onclick="calculate()" id="calculateBtn">Calculate</a>
                 </div>
+                <div id="finalAmount">
+                    <div id="totalAmount" >
+                        Total : $<span id="totalDisplay"></span>
+                    </div>
+                    $<span id="splitTotal"></span> per person
+                </div>
+
             </div>
         </form>
-
-
-
+    </div>
 </div>
 
     <!-- Used to calculate results & hides/display divs -->

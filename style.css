@@ -2,9 +2,8 @@
     font-family: 'Roboto', sans-serif;
     background: #333 url(images/restaurant.jpg) center no-repeat;
     display: flex;
-    text-align: center;
     justify-content: center; 
-    height: 130vh;
+    height: 100vh;
 }
 
 #calculator {
@@ -13,11 +12,14 @@
     height: 900px;
     width: 500px;
     margin-top: 2rem;
+    text-align: center;
+    height: 90vh;
+
 }
 
 .form-item {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 } 
 
 .form-input {
@@ -26,13 +28,8 @@
     padding: .3rem;
 }
 
-.float-container {
-    padding: 30px;
-}
-
-.float-child {
-    width: 50%;
-    float: left;
+#pic {
+    height: 250px;
 }
 
 #calculateBtn {
@@ -57,18 +54,15 @@
    background-color:#FFFFFF;
 }
 
-#totalArea {
-    margin: 30px;
-}
-
 #finalAmount {
     font-size:1.1rem;
     margin-bottom: 2rem;
 }
-
-#pic {
-    height: 200px;
+ 
+#totalAmount {
+    padding-bottom: 1rem;
 }
+
 
 .animate-character
 {
