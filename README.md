@@ -6,6 +6,12 @@ For when you're splitting the bill with some friends. Just enter the total amoun
 
 The app will also predict how much you enjoyed your food with a funny image. 
 
+<p>
+  <a href="http://zubyj.me/projects/to-do-list/">
+    <img src="./images/screenshot.png">
+  </a>
+</p>
+
 ## Reflection
 
 This is a great starting project to sharpen your HTML/CSS/JS skills. I'd highly recommend building something similar if you're interested. 
