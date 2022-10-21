@@ -14,7 +14,7 @@
     margin-top: 2rem;
     text-align: center;
     height: 90vh;
-
+    border-radius: 50px;
 }
 
 .form-item {
@@ -62,7 +62,6 @@
 #totalAmount {
     padding-bottom: 1rem;
 }
-
 
 .animate-character
 {
